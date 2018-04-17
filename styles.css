@@ -1,3 +1,119 @@
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  padding-top: 0.5em;
+}
+
+h2, h5 {
+  text-transform: uppercase;
+  /* Padding used instead of margins because whereas margins add space beyond element's box and therefore won't be colored, the inverse is true for padding */
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+.about p {
+  padding: 0 4em 2em 4em;
+  margin: 0;
+  text-align: left;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.hero-image {
+  background-image: url(https://image.ibb.co/jEN7CS/workspace.jpg);
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Resizes background image to fill entire container */
+  background-size: cover;
+  position: relative;
+}
+
+.about {
+  background-color: WhiteSmoke;
+}
+
+.portfolio {
+  background-color: LightGrey;
+}
+
+.contact {
+  background-color: WhiteSmoke;
+}
+
+/* Removes white space from sides of each column */
+.col {
+  padding: 0;
+}
+
+.footer {
+  position: bottom;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: grey;
+}
+
+.footer-tag {
+  color: white;
+  text-align: left;
+  padding: 15px;
+}
+
+.fab {
+  float: right;
+  padding: 10px;
+  color: white;
+}
+
+.fab:hover {
+	color: #4d4d4d;
+}
+
+.form-control {
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 1px solid #888;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0;
+  padding: 10px 0px;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+input[type=text], input[type=email] {
+  background-color: WhiteSmoke;
+}
+
+button {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+/* Moves contact form button (from bottom center) to bottom right of form */
+.bt-btn {
+  margin: 0 auto;
+  text-align: right;
+  width: 50%;
 }
