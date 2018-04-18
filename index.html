@@ -13,20 +13,30 @@
 </head>
 
 <body>
-  <!-- Grey horizontal navbar that becomes vertical on small screens -->
-  <nav class="navbar sticky-top navbar-expand-sm bg-dark">
+  <!-- navbar-expand-md displays menu items horizontally at the medium breakpoint. navbar-dark styles menu item text (changes from blue to gray text that becomes a lighter color on hover) -->
+  <nav class="navbar navbar-expand-md bg-dark sticky-top navbar-dark">
 
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
+    <!-- Toggler/collapsible button. ml-auto moves toggler icon from left to right side (sets left margin to auto) -->
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <!-- flex-row makes nav items horizontal rather than vertical -->
+      <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
+        <li class="nav-item">
+          <!-- px-3 sets left and right padding to $spacer Sass map variable, which is 1rem (html (root) font-size). py-0 sets top and bottom padding to 0 -->
+          <a class="nav-link px-3 py-0" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-0" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-0" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
 
   </nav>
 
