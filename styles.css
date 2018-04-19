@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
@@ -22,16 +22,22 @@ h2, h5 {
 }
 
 .hero-image {
-  background-image: url(https://image.ibb.co/jEN7CS/workspace.jpg);
-  /* Set a specific height */
-  height: 100%;
-
-  /* Position and center the image to scale nicely on all screens */
+  background-image: url(https://image.ibb.co/fzz87S/laptop_reversed.jpg);
+  /* Sets height to full height (100%) of viewport */
+  height: 100vh;
+  /* Ensures background image spans the full width of the viewport */
+  background-size: cover;
+  /* Aligns image to center of viewport */
   background-position: center;
   background-repeat: no-repeat;
-  /* Resizes background image to fill entire container */
-  background-size: cover;
-  position: relative;
+  /* Enables flex layout */
+  display: flex;
+  /* Vertically aligns (align-items defines how the browser distributes space between and around flex items along cross-axis of container; works like justify-content but in the perpendicular direction) */
+  align-items: center;
+}
+
+.hero-text {
+  margin: 0 auto;
 }
 
 .about {
