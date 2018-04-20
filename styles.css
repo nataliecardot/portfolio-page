@@ -5,20 +5,26 @@ body {
 
 h1 {
   font-family: "Playfair Display", serif;
-  padding-top: 0.5em;
+  margin-bottom: 0.7em;
 }
 
 h2, h5 {
   text-transform: uppercase;
-  /* Padding used instead of margins because whereas margins add space beyond element's box and therefore won't be colored, the inverse is true for padding */
-  padding: 0.5em 0;
+  padding-bottom: 1em;
+  /* Overrides default 0.67em top and bottom margin typically displayed by browsers for h elements */
   margin: 0;
 }
 
-.about p {
-  padding: 0 7em 2em 7em;
-  margin: 0;
+p {
   text-align: left;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.card-text {
+  font-size: 0.8em;
 }
 
 .hero-image {
@@ -37,24 +43,26 @@ h2, h5 {
 }
 
 .hero-text {
+  /* Horizontally centers hero text */
   margin: 0 auto;
 }
 
-.about {
+.about, .contact {
   background-color: WhiteSmoke;
 }
 
 .portfolio {
-  background-color: LightGrey;
+  background-color: #e6e6e6;
+}
+
+.about, .portfolio {
+  /* Adds consistent spacing between content of each row and row's border/edge of viewport */
+  padding: 3em 7em;
 }
 
 .contact {
-  background-color: WhiteSmoke;
-}
-
-/* Removes white space from sides of each column */
-.col {
-  padding: 0;
+  /* Adds consistent spacing between content of each row and row's border/edge of viewport. Setting right and left padding to 0 so it doesn't decrease width of contact form inputs */
+  padding: 3em 0em;
 }
 
 .footer {
@@ -63,14 +71,14 @@ h2, h5 {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.5rem;
   background-color: grey;
 }
 
 .footer-tag {
   color: white;
   text-align: left;
-  padding: 15px;
+  padding: 0.5rem;
 }
 
 .fab {
@@ -95,7 +103,7 @@ h2, h5 {
 }
 
 form {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -115,21 +123,22 @@ button {
   width: 50%;
 }
 
-
-@media only screen and (max-width: 600px) {
-  form-control, form  {
-    width: 100%;
+@media only screen and (max-width: 700px) {
+  .about, .portfolio {
+    /* Adds consistent spacing between content of each row and row's border/edge of viewport */
+    padding: 2em 2em;
   }
-}
 
-@media only screen and (max-width: 600px) {
+  .contact {
+    padding: 2em 0;
+  }
+
   .bt-btn {
     width: 50%;
   }
-}
 
-@media only screen and (max-width: 600px) {
-  .about p {
-    padding: 0 2em 2em 2em;
+  form-control, form  {
+    /* Set to 90% on screens larger than 700px; too skinny for mobile */
+    width: 100%;
   }
 }
