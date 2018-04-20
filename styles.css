@@ -20,7 +20,7 @@ p {
 }
 
 .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
 
 .card-text {
@@ -55,13 +55,18 @@ p {
   background-color: #e6e6e6;
 }
 
-.about, .portfolio {
+.about {
   /* Adds consistent spacing between content of each row and row's border/edge of viewport */
   padding: 3em 7em;
 }
 
+.portfolio {
+  /* Since portfolio-item has a bottom margin of 2em, decreasing this section's bottom margin by that amount */
+  padding: 3em 7em 1em 7em;
+}
+
 .contact {
-  /* Adds consistent spacing between content of each row and row's border/edge of viewport. Setting right and left padding to 0 so it doesn't decrease width of contact form inputs */
+  /* Setting right and left padding to 0 so it doesn't decrease width of contact form inputs */
   padding: 3em 0em;
 }
 
@@ -71,14 +76,14 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5em;
   background-color: grey;
 }
 
 .footer-tag {
   color: white;
   text-align: left;
-  padding: 0.5rem;
+  padding: 0.5em;
 }
 
 .fab {
@@ -124,9 +129,14 @@ button {
 }
 
 @media only screen and (max-width: 700px) {
-  .about, .portfolio {
+  .about {
     /* Adds consistent spacing between content of each row and row's border/edge of viewport */
     padding: 2em 2em;
+  }
+
+  .portfolio {
+    /* Since portfolio-item has a bottom margin of 2em, decreasing this section's bottom margin by that amount */
+    padding: 2em 2em 0 2em;
   }
 
   .contact {
