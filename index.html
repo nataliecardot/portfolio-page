@@ -14,21 +14,28 @@
 </head>
 
 <body>
-  <!-- navbar-dark styles menu item text (changes from blue to gray text that becomes a lighter color on hover) -->
-  <nav class="navbar bg-dark sticky-top navbar-dark">
-    <!-- flex-row displays menu items horizontally rather than vertically -->
-    <ul class="navbar-nav flex-row ml-auto">
-      <li class="nav-item">
-        <!-- px-3 sets left and right padding to $spacer Sass map variable, which is 1rem (html (root) font-size). py-0 sets top and bottom padding to 0 -->
-        <a class="nav-link px-3 py-0" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link px-3 py-0" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link px-3 py-0" href="#contact">Contact</a>
-      </li>
-    </ul>
+  <!-- navbar-expand-md displays menu items horizontally at the medium breakpoint. navbar-dark styles menu item text (changes from blue to gray text that becomes a lighter color on hover) -->
+  <nav class="navbar navbar-expand-md bg-dark sticky-top navbar-dark">
+
+    <!-- Toggler/collapsible button. ml-auto moves toggler icon from left to right side (sets left margin to auto) -->
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <!-- px-3 sets left and right padding to $spacer Sass map variable, which is 1rem (html (root) font-size). py-0 sets top and bottom padding to 0 -->
+          <a class="nav-link px-3 py-0" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-0" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-0" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
 
   </nav>
 
@@ -39,7 +46,7 @@
           <h1>Natalie Cardot</h1>
           <h5>Web developer</h5>
           <form action="mailto:nataliecardot@gmail.com" method="post" enctype="text/plain">
-            <button class="btn btn-dark">Contact Me</button>
+            <button class="btn btn-dark btn-top btn-contact">Contact Me</button>
           </form>
         </div>
       </div>
@@ -49,9 +56,9 @@
   <section id="about">
     <div class="row about">
       <div class="col">
-          <h2>About</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit arcu quis lectus auctor, nec laoreet augue ornare. Proin vehicula id purus ac accumsan. Aliquam eu rutrum orci. Aliquam rhoncus ipsum sed nisi porta mattis. Cras euismod sed justo a vehicula. Maecenas nibh magna, auctor nec erat in, hendrerit blandit turpis. Curabitur laoreet viverra mi at consequat.</p>
-          <p>Donec mollis tortor sem, vel pharetra magna mattis quis. Praesent erat dolor, lacinia at euismod quis, sodales eu orci. Fusce ut nibh dolor. Suspendisse potenti. Proin fermentum eros condimentum hendrerit mattis. Morbi libero nibh, tempus aliquam leo sed, elementum rutrum turpis. Pellentesque et pharetra sapien. Nulla sed quam vel ex dictum egestas in tempus risus. Donec lacus magna, feugiat sed lobortis finibus, bibendum vel magna.</p>
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit arcu quis lectus auctor, nec laoreet augue ornare. Proin vehicula id purus ac accumsan. Aliquam eu rutrum orci. Aliquam rhoncus ipsum sed nisi porta mattis. Cras euismod sed justo a vehicula. Maecenas nibh magna, auctor nec erat in, hendrerit blandit turpis. Curabitur laoreet viverra mi at consequat.</p>
+        <p>Donec mollis tortor sem, vel pharetra magna mattis quis. Praesent erat dolor, lacinia at euismod quis, sodales eu orci. Fusce ut nibh dolor. Suspendisse potenti. Proin fermentum eros condimentum hendrerit mattis. Morbi libero nibh, tempus aliquam leo sed, elementum rutrum turpis. Pellentesque et pharetra sapien. Nulla sed quam vel ex dictum egestas in tempus risus. Donec lacus magna, feugiat sed lobortis finibus, bibendum vel magna.</p>
       </div>
     </div>
   </section>
@@ -63,6 +70,7 @@
         <h2>Portfolio</h2>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
+        <!-- h-100 is a Bootstrap 4 utility class that sets height to 100% -->
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
           <div class="card-body d-flex flex-column">
@@ -75,50 +83,50 @@
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h4 class="card-title">Project Two</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            <a href="#" class="card-link text-info">View CodePen</a>
+            <a href="#" class="card-link text-info mt-auto">View CodePen</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h4 class="card-title">Project Three</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-            <a href="#" class="card-link text-info">View CodePen</a>
+            <a href="#" class="card-link text-info mt-auto">View CodePen</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h4 class="card-title">Project Four</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            <a href="#" class="card-link text-info">View CodePen</a>
+            <a href="#" class="card-link text-info mt-auto">View CodePen</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h4 class="card-title">Project Five</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            <a href="#" class="card-link text-info">View CodePen</a>
+            <a href="#" class="card-link text-info mt-auto">View CodePen</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h4 class="card-title">Project Six</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-            <a href="#" class="card-link text-info">View CodePen</a>
+            <a href="#" class="card-link text-info mt-auto">View CodePen</a>
           </div>
         </div>
       </div>
@@ -130,18 +138,18 @@
     <div class="row contact">
       <div class="col center-block">
         <h2>Contact</h2>
-
+        <p>Have a question or want to work together?</p>
         <form action="mailto:nataliecardot@gmail.com" method="post" enctype="text/plain">
           <div class="form-group">
             <input type="text" class="form-control" id="contact-name" placeholder="Name" required>
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" id="contact-email" aria-describedby="emailinfo" placeholder="Email" required>
+            <input type="email" class="form-control email" id="contact-email" aria-describedby="emailinfo" placeholder="Email" required>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="contact-message" placeholder="Your message" required>
+            <textarea name="message" class="form-control message-box" type="text" id="input-message" placeholder="Message" required></textarea>
           </div>
-          <div class="bt-btn">
+          <div class="form-btn">
             <button type="submit" class="btn btn-dark">Send</button>
           </div>
         </form>
@@ -150,14 +158,13 @@
     </div>
   </section>
 
-  <div class="footer">
+  <div class="footer bg-dark">
+    <p class="footer-text">Created by Natalie Cardot</p>
     <!-- "fab" prefix new in Font Awesome version 5 (released 3/18) -->
-    <a href="https://github.com/nataliecardot" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-    <a href="https://codepen.io/nataliecardot/"><i class="fab fa-codepen fa-2x"></i></a>
-    <a href="https://twitter.com/nataliecardot/"><i class="fab fa-twitter fa-2x"></i></a>
-    <a href="https://www.linkedin.com/in/natalie-cardot/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
-    <div class="footer-tag">
-    <p>Created by Natalie Cardot.</p>
+    <a href="https://github.com/nataliecardot" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://codepen.io/nataliecardot/"><i class="fab fa-codepen"></i></a>
+    <a href="https://twitter.com/nataliecardot/"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/natalie-cardot/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
