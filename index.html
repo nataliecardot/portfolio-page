@@ -12,16 +12,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <!-- navbar-expand-md displays menu items horizontally at the medium breakpoint. navbar-dark styles menu item text (changes from blue to gray text that becomes a lighter color on hover) -->
   <nav class="navbar navbar-expand-md bg-dark sticky-top navbar-dark">
-
     <!-- Toggler/collapsible button. ml-auto moves toggler icon from left to right side (sets left margin to auto) -->
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -36,11 +33,11 @@
         </li>
       </ul>
     </div>
-
   </nav>
-
+  <div class="container-fluid">
   <div class="row">
-    <div class="col">
+    <!-- p-0 removes left and right padding -->
+    <div class="col px-0">
       <div class="hero-image">
         <div class="hero-text text-white">
           <h1>Natalie Cardot</h1>
@@ -52,88 +49,85 @@
       </div>
     </div>
   </div>
-
   <section id="about">
     <div class="row about">
       <div class="col">
         <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit arcu quis lectus auctor, nec laoreet augue ornare. Proin vehicula id purus ac accumsan. Aliquam eu rutrum orci. Aliquam rhoncus ipsum sed nisi porta mattis. Cras euismod sed justo a vehicula. Maecenas nibh magna, auctor nec erat in, hendrerit blandit turpis. Curabitur laoreet viverra mi at consequat.</p>
-        <p>Donec mollis tortor sem, vel pharetra magna mattis quis. Praesent erat dolor, lacinia at euismod quis, sodales eu orci. Fusce ut nibh dolor. Suspendisse potenti. Proin fermentum eros condimentum hendrerit mattis. Morbi libero nibh, tempus aliquam leo sed, elementum rutrum turpis. Pellentesque et pharetra sapien. Nulla sed quam vel ex dictum egestas in tempus risus. Donec lacus magna, feugiat sed lobortis finibus, bibendum vel magna.</p>
+        <p>After graduating in 2015 with a bachelor's degree in geography from the University of British Columbia, I settled in Seattle and began working at a publishing company. I've since found my passion—web development—and am continually building upon my skill set on a daily basis.</p>
+        <p>Despite being relatively new to coding, I believe my background will serve me well in my professional career. Early in my college education, I had planned to pursue a career as an illustrator/oil painter. Although I instead decided to major in something more academic and practical, I retained my eye for what works and what doesn't in design. I also ran a personal finance blog for half a year during a period of career path exploration. My experience as a proofreader and web content writer has honed my ability to communicate clearly and effectively.</p>
+        <p>During my spare time I also enjoy listening to science- and philosophy-related podcasts and working on my French.</p>
       </div>
     </div>
   </section>
-
   <section id="portfolio">
     <div class="row portfolio">
-
       <div class="col-sm-12">
         <h2>Portfolio</h2>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <!-- h-100 is a Bootstrap 4 utility class that sets height to 100% -->
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <img class="card-img-top" src="https://image.ibb.co/mdODwx/tribute_page.jpg" alt="David Hume tribute page appearance">
           <div class="card-body d-flex flex-column">
-            <h4 class="card-title">Project One</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-            <a href="#" class="card-link text-info mt-auto">View CodePen</a>
+            <h4 class="card-title">Tribute Page</h4>
+            <p class="card-text">A simple tribute page (to David Hume) utilizing Bootstrap 4.</p>
+            <a href="https://codepen.io/nataliecardot/pen/JLwGdY" class="card-link text-info mt-auto">View CodePen</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <img class="card-img-top" src="https://image.ibb.co/kwoA9H/pixel_art_maker_jquery.jpg" alt="jQuery pixel art maker page appearance">
           <div class="card-body d-flex flex-column">
-            <h4 class="card-title">Project Two</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            <a href="#" class="card-link text-info mt-auto">View CodePen</a>
+            <h4 class="card-title">Pixel Art Maker No. 1</h4>
+            <p class="card-text">A simple customizable grid that the user can draw on with a color of his/her choice, created with jQuery.</p>
+            <a href="https://codepen.io/nataliecardot/pen/VQRrgQ" class="card-link text-info mt-auto">View CodePen</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <img class="card-img-top" src="https://image.ibb.co/dv3owx/pixel_art_maker_vanilla_js.jpg" alt="Vanilla JS pixel art maker page appearance">
           <div class="card-body d-flex flex-column">
-            <h4 class="card-title">Project Three</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-            <a href="#" class="card-link text-info mt-auto">View CodePen</a>
+            <h4 class="card-title">Pixel Art Maker No. 2</h4>
+            <p class="card-text">A simple customizable grid that the user can draw on with a color of his/her choice, created with vanilla JavaScript (no jQuery).</p>
+            <a href="https://codepen.io/nataliecardot/pen/MQRxJZ" class="card-link text-info mt-auto">View CodePen</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <img class="card-img-top" src="https://image.ibb.co/j8QbGx/to_do_list_bootstrap.jpg" alt="Bootstrap/jQuery to-do-list page appearance">
           <div class="card-body d-flex flex-column">
-            <h4 class="card-title">Project Four</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            <a href="#" class="card-link text-info mt-auto">View CodePen</a>
+            <h4 class="card-title">To-Do-List No. 1</h4>
+            <p class="card-text">A simple to-do list utilizing jQuery and Bootstrap.</p>
+            <a href="https://codepen.io/nataliecardot/pen/NYLMwW" class="card-link text-info mt-auto">View CodePen</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <img class="card-img-top" src="https://image.ibb.co/eNMmic/simple_to_do_list.jpg" alt="jQuery to-do-list page appearance">
           <div class="card-body d-flex flex-column">
-            <h4 class="card-title">Project Five</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            <a href="#" class="card-link text-info mt-auto">View CodePen</a>
+            <h4 class="card-title">To-Do List No. 2</h4>
+            <p class="card-text">A simple to-do list utilizing jQuery.</p>
+            <a href="https://codepen.io/nataliecardot/pen/VXmPrO" class="card-link text-info mt-auto">View CodePen</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <img class="card-img-top" src="https://image.ibb.co/htziUH/portfolio_page.jpg" alt="Portfolio page appearance">
           <div class="card-body d-flex flex-column">
-            <h4 class="card-title">Project Six</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-            <a href="#" class="card-link text-info mt-auto">View CodePen</a>
+            <h4 class="card-title">Portfolio Page</h4>
+            <p class="card-text">This page, created with Bootstrap 4.</p>
+            <a href="https://codepen.io/nataliecardot/pen/PRMvbP" class="card-link text-info mt-auto">View CodePen</a>
           </div>
         </div>
       </div>
 
     </div> <!-- End of row div -->
   </section>
-
   <section id="contact">
     <div class="row contact">
       <div class="col center-block">
@@ -153,20 +147,20 @@
             <button type="submit" class="btn btn-dark">Send</button>
           </div>
         </form>
-
       </div>
     </div>
+  </div> <!-- End of container-fluid -->
   </section>
-
   <div class="footer bg-dark">
-    <p class="footer-text">Created by Natalie Cardot</p>
-    <!-- "fab" prefix new in Font Awesome version 5 (released 3/18) -->
-    <a href="https://github.com/nataliecardot" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://codepen.io/nataliecardot/"><i class="fab fa-codepen"></i></a>
-    <a href="https://twitter.com/nataliecardot/"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/natalie-cardot/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <div class="container">
+      <p class="footer-text">Created by Natalie Cardot</p>
+      <!-- "fab" prefix new in Font Awesome version 5 (released 3/18) -->
+      <a href="https://github.com/nataliecardot" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://codepen.io/nataliecardot/"><i class="fab fa-codepen"></i></a>
+      <a href="https://twitter.com/nataliecardot/"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/natalie-cardot/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
   </div>
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
